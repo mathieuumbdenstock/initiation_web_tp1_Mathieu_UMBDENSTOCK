@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="tphtml.css">
-    <script src="javascript/ampoule.js"></script>
+    <script src="javascript/planets.js"></script>
 </head>
 
 <body>
@@ -26,20 +26,21 @@
 		</nav>
 			
 		<article>
-            <img src ="images/planets.gif" width ="145" height ="126" alt="Planets" usemap="#planetmap" />
+			<h1>Javascript events</h1>
+            <img id="planetes" src ="images/planets.gif" width ="145" height ="126" alt="Planets" usemap="#planetmap" />
 
             <map name="planetmap">
             <area shape ="rect" coords ="0,0,82,126"
-            onmouseover="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')"
-            href ="sun.htm" target ="_blank" alt="Sun" />
+            onmouseover="sun()" onmouseout="loin()"
+			href ="images/sun.gif" target ="_blank" alt="Sun" />
                         
             <area shape ="circle" coords ="90,58,3"
-            onmouseover="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')"
-            href ="mercur.htm" target ="_blank" alt="Mercury" />
+            onmouseover="mercur()" onmouseout="loin()"
+			href ="images/merglobe.gif" target ="_blank" alt="Mercury" />
                         
             <area shape ="circle" coords ="124,58,8"
-            onmouseover="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')"
-            href ="venus.htm" target ="_blank" alt="Venus" />
+            onmouseover="venus()" onmouseout="loin()"
+            href ="images/venglobe.gif" target ="_blank" alt="Venus" />
             </map> 
             
             <p id="desc">Mouse over the sun and the planets and see the different descriptions.</p>
